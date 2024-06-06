@@ -1,0 +1,37 @@
+html {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: #e0f2fe;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template: 200px auto / 200 85%;
+}
+
+header {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background-color: white;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  height: auto;
+}
+
+aside {
+  background-color: #0ea5e9;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}

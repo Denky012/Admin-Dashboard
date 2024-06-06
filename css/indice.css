@@ -1,0 +1,30 @@
+.titulo,
+ul {
+  display: flex;
+}
+
+.titulo {
+  height: auto;
+  padding: 10px;
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 1.5em;
+  padding: 20px;
+}
+
+ul {
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 1.1em;
+}

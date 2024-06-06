@@ -1,0 +1,68 @@
+.buscar,
+.sesion,
+.cuenta,
+.botones {
+  display: flex;
+  align-items: center;
+}
+
+.buscar,
+.sesion,
+.cuenta,
+.botones {
+  border: 1px blue;
+}
+
+.buscar {
+  padding: 0 40px 0px 40px;
+  height: 94px;
+}
+
+#barra {
+  width: 70%;
+  border-radius: 25px;
+  border: none;
+  background-color: #e0f2fe;
+  padding: 10px;
+}
+
+.sesion {
+  justify-content: right;
+  padding-right: 40px;
+  gap: 20px;
+  height: 94px;
+}
+
+.cont-logo {
+  height: 60px;
+}
+
+.cont-logo img {
+  height: 100%;
+  border-radius: 100%;
+}
+
+.cuenta {
+  gap: 15px;
+  padding: 0 40px;
+  font-size: 1.3em;
+  height: 60px;
+}
+
+.cuenta .cont-logo {
+  height: 70px;
+}
+
+.botones {
+  justify-content: center;
+  gap: 20px;
+  height: 60px;
+  display: flex;
+  justify-content: right;
+  padding-right: 40px;
+}
+
+.botones button {
+  padding: 7px 35px;
+  border-radius: 15px;
+}

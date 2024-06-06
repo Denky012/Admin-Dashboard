@@ -1,0 +1,144 @@
+.centro {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 1fr;
+  padding: 20px;
+  font-size: 1rem;
+}
+
+.izquierda {
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  grid-template-columns: 1fr;
+  padding: 0 0 0 20px;
+}
+
+.tarjetas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.contenedores {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-rows: repeat(auto-fit, auto);
+  gap: 15px;
+}
+
+.derecha {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+  padding: 0 10px 0 20px;
+}
+
+.contenedor-derecha {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(auto, 1fr));
+}
+
+.contenedor-derecha .tarjetas {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.anuncios,
+.tendencias {
+  display: grid;
+  grid-template-rows: 50px repeat(1, minmax(250px, 1fr));
+}
+
+.izquierda .tarjetas {
+  border-left: 8px solid #f0b429;
+}
+
+h4,
+p {
+  margin: 0;
+}
+
+.botones {
+  padding: 0;
+}
+
+.centro .botones button,
+button {
+  border: none;
+  padding: 0;
+}
+
+.botones button i {
+  padding: 0;
+  font-size: 1.1rem;
+  background-color: white;
+}
+
+.contenedor-derecha article {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 400;
+}
+
+p,
+.c-cuenta {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 400;
+}
+
+hr {
+  font-weight: lighter;
+}
+
+.cuentas-tendencia {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-cuenta {
+  height: 50px;
+  width: 50px;
+}
+
+.T-cuenta {
+  width: 100%;
+}
+
+.c-cuenta {
+  font-size: 0.9rem;
+}
+
+.logo-cuenta img {
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+@media (max-width: 1199px) {
+  .contenedores {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 1023px) {
+  .izquierda {
+    padding: 0;
+  }
+}
+
+@media (max-width: 990px) {
+  .contenedores {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  .centro {
+    grid-template-columns: repeat(1, auto);
+  }
+}
